@@ -79,7 +79,6 @@ html,
 .products_hot {
   background-color: rgb(0, 13, 33);
   background-image: url("../img/banner/hot.png") ;
-  height: 100vh;
   background-repeat: no-repeat;
   margin-top: 100px;
 
