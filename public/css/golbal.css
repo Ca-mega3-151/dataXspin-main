@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 1440px;
+    margin: auto;
+  }
+  
+  .flex{
+    display: flex;
+  }
+  
+  /* header top */
+  .header-top {
+    background-color:#2579f2;
+  }
+  .tiltle-logo {
+    color: white;
+  }
+  
+
+  
+  .sign-xspin i {
+    font-size: 30px;
+    margin-right: 5px;
+  }
+  .sign-xspin a {
+    font-size: 17px;
+    text-decoration: none;
+    margin:0px  5px;
+    color: white;
+  }
+  
+  .cart a {
+    padding: 10px 15px;
+    border: 1px solid rgb(197, 203, 203);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+  }
+  
+  .cart a i {
+    font-size: 20px;
+  }
+  
+  .cart a p {
+    margin: 0px 5px;
+  }
+  
+/* header main */
+
+.nav_main {
+    background-color: rgb(46, 44, 44);
+}
+.decoration {
+    text-decoration: none;
+}
+
+.list-style-none {
+    list-style: none;
+}
+.nav-list-main {
+   height: 50px;
+}
+
+.nav-list-main ul li {
+
+    list-style: none;
+    margin: 0px 10px;
+    padding: 5px 0px;
+}
+.nav-list-main ul li a {
+   color: rgb(255, 255, 255);
+
+   display: flex;
+   text-align: center;
+}
+.nav-list-main ul li a p {
+    line-height: 40px;
+    margin: 0px 5px;
+}
+
+.link-products {
+    height: 40px;
+    margin: 5px 0px;
+}
+.link-products span {
+    font-size: 25px;
+    padding: 2px 3px;
+}
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 1;
+} */
+
+
+
+  /* footer */
+footer {
+  background-color: #f3f4f6;
+}
+.footer-end {
+  background-color: rgb(241, 246, 252);
+ height: 200px;
+}
+
+div.pay,.contact {
+  display: flex;
+}
+
+.pay a {
+  line-height: 40px;
+  margin: 0px 10px;
+  color: white;
+}
+
+.contact a {
+  line-height: 40px;
+  margin: 0px 5px;
+}
+
+div.pay,.contact a img {
+  max-width: 100%;
+}
+.main-footer{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.footer_link{
+  margin: 10px 10px;
+}
+
+.footer-sign {
+  margin: 10px 120px;
+}
+
+.footer-end {
+  justify-content: space-between;
+}
+
+
+.footer_link div a {
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+ 
+}
+
+.logo-footer {
+  margin-right: 10px;
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../jsonserver-onrender-main/jsonserver-onrender-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jsonserver-onrender-main"
+	}
+}
