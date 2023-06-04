@@ -54,11 +54,15 @@
   .cart a p {
     margin: 0px 5px;
   }
+
+  #white {
+    color: white;
+  }
   
 /* header main */
 
 .nav_main {
-    background-color: rgb(46, 44, 44);
+    background-color: rgb(255, 255, 255);
 }
 .decoration {
     text-decoration: none;
@@ -86,6 +90,7 @@
 .nav-list-main ul li a p {
     line-height: 40px;
     margin: 0px 5px;
+    color: black;
 }
 
 .link-products {
@@ -96,6 +101,7 @@
     font-size: 25px;
     padding: 2px 3px;
 }
+
 
 /* header {
     position: fixed;

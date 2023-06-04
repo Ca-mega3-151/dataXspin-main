@@ -72,21 +72,21 @@
           <div class="search d-none d-md-block">
             <form class="d-flex mt-3" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-success"style="color: white; border:1px solid white" type="submit">Search</button>
             </form>
           </div>
 
           <div class="sign-xspin flex mt-3 p-1">
-            <i class='bx bx-user-circle' ></i>
-            <a href="">Đăng nhập </a>
-            <span class="d-sm-none">/</span>
-            <a href="" class="d-sm-none">Đăng Ký</a>
+            <i style="color: white;" class='bx bx-user-circle' ></i>
+            <a href="sign.html">Đăng nhập </a>
+            <span style="color: white;" class="d-none d-xl-block">/</span>
+            <a href="" class="d-none d-xl-block">Đăng Ký</a>
           </div>
 
           <div class="cart d-none d-md-block mt-1 p-1">
-            <a href="" class="flex" >
+            <a href="cart.html" class="flex" >
               <i class='bx bx-cart mt-1' ></i>
-              <p >Giỏ hàng</p>
+              <p class="d-none d-sm-block" >Giỏ hàng</p>
             </a>
           </div>
           
@@ -100,8 +100,8 @@
         <div class="container">
           <div class="list-product">
             <ul>
-              <a class="nav-link link-products   " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
+              <a  class="nav-link link-products  d-none d-xl-block  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span  class="navbar-toggler-icon"></span>
                 Danh sách sản phẩm 
               </a>
             <li class="nav-item list-style-none dropdown">
@@ -115,18 +115,13 @@
           </ul>
           </div>
           <div class="nav-list-main">
-            <ul class="flex">
+            <ul class="flex nav-contact-products">
               <li >
                 <a class="decoration" href="">
                   <img src="./img/icon/Nap-thesvg-30724.svg" alt="">
                 <p>Thủ thuật & tin tức</p>
               </a></li>
-              <!-- <li>
-                <a class="decoration" href="">
-                  <img src="./img/icon/Gioi-thieu-ban-be-87652.svg" alt="">
-                <p>Giới thiệu bạn bè</p>
-              </a ></li>
-              <li > -->
+             
               <li>
                 <a class="decoration" href="">
                   <img src="./img/icon/Lien-he-hop-tac-33199.svg" alt="">
@@ -191,12 +186,14 @@
         >
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a href="product-details.html">
+                <img
                 src="./img/product-game/header.jpg"
                 alt=""
-              />
-              <p>EA Sports Fifa 2023</p>
-              <p>1000.000đ</p>
+                />
+                <p>EA Sports Fifa 2023</p>
+                <p>1000.000đ</p>
+              </a>
             </div>
           </div>
 

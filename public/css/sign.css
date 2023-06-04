@@ -1,0 +1,30 @@
+.sign-user {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   height: 400px;
+}
+
+.sign-user form input {
+    width: 400px;
+    height: 40px;
+    display: block;
+    padding: 5px 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(42, 45, 45);
+}
+
+.log-in {
+    background-color: #2579f2;
+}
+
+.btn-sign {
+    display: block;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: none;
+}
