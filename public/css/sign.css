@@ -1,8 +1,29 @@
-.sign-user {
+ 
+ .sign-login {
+    max-width: 100%;
+    background-color: rgba(255, 255, 255);
+    transform: scale(0.8);
+    transition: 0.5s;
+    z-index: 10;
+    left: 25%;
+    padding: 30px;
+ }
+
+ .bg-sign {
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: 1;
+ }
+
+
+ .sign-user {
    display: flex;
    justify-content: center;
    align-items:center;
    height: 400px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .sign-user form input {
@@ -15,7 +36,7 @@
     border: 1px solid rgb(42, 45, 45);
 }
 
-.log-in {
+.log-in,.register {
     background-color: #2579f2;
 }
 
@@ -27,4 +48,21 @@
     margin: 10px 0px;
     border-radius: 10px;
     border: none;
+}
+
+.show {
+    opacity: 100;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.hide {
+    display: none;
+}
+
+.close {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    font-size: 35px;
 }

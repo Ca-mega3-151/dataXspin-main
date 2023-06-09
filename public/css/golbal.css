@@ -31,7 +31,18 @@
     font-size: 30px;
     margin-right: 5px;
   }
+  .sign-xspin-user i {
+    font-size: 30px;
+    margin-right: 5px;
+  }
   .sign-xspin a {
+    font-size: 17px;
+    text-decoration: none;
+    margin:0px  5px;
+    color: white;
+  }
+  
+  .sign-xspin-user a {
     font-size: 17px;
     text-decoration: none;
     margin:0px  5px;
@@ -119,7 +130,7 @@ footer {
 }
 .footer-end {
   background-color: rgb(241, 246, 252);
- height: 200px;
+
 }
 
 div.pay,.contact {
