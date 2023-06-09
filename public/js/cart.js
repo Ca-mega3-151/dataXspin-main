@@ -178,7 +178,7 @@ function renderCart() {
       .map(
         (item) => `
         <div class="cart-items ">
-        <div class="row">
+         <div class="row">
           <div class="col-4">
             <div class="img-cart-product">
               <img src="${item.thumbnail}" class="mw-100" alt="${item.title}">
@@ -208,7 +208,7 @@ function renderCart() {
               </button>
             </div>
           </div>
-        </div>
+         </div>
         </div>
       `
       )
