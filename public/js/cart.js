@@ -177,6 +177,7 @@ function renderCart() {
     const items = cart.items
       .map(
         (item) => `
+        <div class="cart-items ">
         <div class="row">
           <div class="col-4">
             <div class="img-cart-product">
@@ -207,6 +208,7 @@ function renderCart() {
               </button>
             </div>
           </div>
+        </div>
         </div>
       `
       )
