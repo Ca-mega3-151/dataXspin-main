@@ -15,13 +15,13 @@
 }
 
 .discover {
-  padding: 5px 15px;
+  padding: 5px 10px;
   text-decoration: none;
   background-color: rgb(68, 61, 203);
   color: white;
-  height: 40px;
+  max-height: 40px;
   border-radius: 10px;
-  margin-top: 20px;
+  font-size: 1rem;
 }
 
 .list-product {
@@ -79,6 +79,7 @@ html,
 .products_hot {
   background-color: rgb(0, 13, 33);
   background-image: url("../img/banner/hot.png") ;
+  background-size: contain;
   background-repeat: no-repeat;
   margin-top: 100px;
   
@@ -88,15 +89,15 @@ html,
   padding: 50px;
 }
 .content-hot{
-  padding: 100px;
+  padding: 100px 0px 50px 0px;
 }
 
-.hot-title {
+.hot-title h3 {
   padding: 8px 15px;
   border: 1px solid white;
   border-radius: 15px;
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 .content-hot {
   margin-bottom: 40px;
@@ -105,3 +106,60 @@ html,
 .list-product-hot div p {
   color: #fff;
 }
+
+@media (max-width: 500px) {
+  .game-title {
+    width: 100px;
+  }
+  .game-title h2 {
+    font-size: 17;
+  }
+  .game-title p {
+    font-size: 11px;
+  }
+  .discover {
+    font-size: 10px;
+    padding: 0px 5px;
+    background-color: rgb(68, 61, 203);
+    color: white;
+    line-height: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .game-title h3 {
+    font-size: 13px;
+    height: 40px;
+    
+  }
+  .discover {
+    font-size: 11px;
+    padding: 0px 10px;
+    background-color: rgb(68, 61, 203);
+    color: white;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .game-title {
+    width: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .discover {
+    font-size: 11px;
+    padding: 0px 10px;
+    background-color: rgb(68, 61, 203);
+    color: white;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+}
+
