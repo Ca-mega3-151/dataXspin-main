@@ -12,8 +12,14 @@ td {
   border-collapse: collapse;
 }
 
-.shopping-cart {
+.cart-main {
   width: 100%;
+  height: 60vh;
+}
+
+.shopping-cart-empty {
+  height: 60vh;
+
 }
 
 .product-thumbnail {
@@ -41,7 +47,13 @@ td {
   border: 1px solid rgb(196, 203, 201);
   padding: 25px 25px;
   border-radius: 10px;
-  margin-bottom: 30px;
+
+}
+.cart-item {
+  border: 1px solid rgb(196, 203, 201);
+  padding: 25px 25px;
+  border-radius: 10px;
+  margin: 0px 20px 20px 20px;
 }
 
 .cart-products {

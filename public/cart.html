@@ -148,8 +148,8 @@
 
   </header>
 
-  <section>
-    <div class="sign-login hide  position-fixed  text-center ">
+  <section class="sign-login hide position-fixed">
+    <div class=" form-login ">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
@@ -165,7 +165,7 @@
             <form name="myForm form-log-in" action="/action_page.php" onsubmit="return validateForm()" method="post">
               <input type="text" class="username" name="username" placeholder="tên đăng nhập">
               <input type="password" class="password" name="password" placeholder="Mật khẩu">
-              <a class="text-decoration-none" href="">Quên mật khẩu</a>
+              <a class="text-decoration-none text-center" href="">Quên mật khẩu</a>
               <button class="btn-sign log-in text-light" type="submit">Đăng nhập</button>
             </form>
             <div class="d-none d-lg-block">
@@ -194,19 +194,23 @@
     </div>
   </section>
 
+
   <section>
     <div class="container cart-products">
 
 
-      <h4>Giỏ hàng (<span class="count-product">  </span>Sản phẩm) </h4>
+      <h4>Giỏ hàng (<span class="count-product">  </span> Sản phẩm) </h4>
 
-      <div class="shopping-cart-empty hide">
+      <div class="shopping-cart-empty text-center mt-5">
+        <div>
         <h3>Chưa có sản phẩm nào trong giỏ hàng</h3>
+        <img  loading="lazy" src="https://cdn.divineshop.vn/static/b1d68ae70c17522557b7ac822a0fe731.svg" class="Ca" alt="Không có sản phẩm phù hợp với tìm kiếm">
       </div>
+    </div>
         <div class="cart-main">
           <div class="row">
-            <div class="col-12 col-lg-8  ">
-              <div class="cart-items ">
+            <div class="col-12 col-lg-8 cart-items mt-3">
+              <!-- <div class="cart-item ">
                 <div class="row">
                   <div class="col-4">
                     <div class="img-cart-product">
@@ -217,12 +221,15 @@
                   <div class="col-8">
                     <div class="information-cart-product space-between">
                       <h2>EA SPORTS™ FIFA 21 Champions Edition</h2>
-                      <div class="product-quantity ">
-                        <button class="btn-down">-</button>
-                        <span class="quantity">1</span>
-                        <button class="btn-up">+</button>
+                      <div>
+                        <div class="product-quantity ">
+                          <button class="btn-down">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn-up">+</button>
+                        </div>
+                        <p class="product-price" id="product-price">1000.000</p>
                       </div>
-                      <p class="product-price">1000.000đ</p>
+                    
                     </div>
 
                     <div class="delete-cart space-between">
@@ -239,17 +246,14 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
 
 
 
-            <div class="col-0 col-lg-4">
-              <div class="">
-                <div class="">
-                  <div class="">
-                    <div class="">
+            <div class="col-0 col-lg-4 mt-3 ">
+
 
                       <form class="">
                         <div class="">
@@ -260,7 +264,7 @@
 
                             <div class="flex mt-2">
                               <div>Tổng thanh toán :</div>
-                              <div class="total-price"></div>
+                              <div ><span class="total-price"></span> VNĐ</div>
                             </div>
                             <div class="flex mt-2">
                               <div>Số dư hiện tại:</div>
@@ -293,10 +297,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  
     </div>
   </section>
 
@@ -359,6 +360,7 @@
   <script src="js/data.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/form.js"></script>
+
 </body>
 
 </html>
