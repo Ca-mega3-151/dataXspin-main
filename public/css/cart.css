@@ -14,7 +14,7 @@ td {
 
 .cart-main {
   width: 100%;
-  height: 60vh;
+ min-height: 60vh;
 }
 
 .shopping-cart-empty {
@@ -66,23 +66,37 @@ td {
   font-size: 16.5px;
   font-weight: 500;
   line-height: 24.5px;
-  max-width: 200px;
+
 }
+
 
 .product-quantity .btn-down,
 .btn-up {
   padding: 0px 8px;
   color: #374151;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
+  line-height: 18px;
   text-align: center;
-  margin: 0px;
+  height: 30px;
+  border: none;
+  border: 2px solid #d1d5db;
+  background-color: #f2f4f6;
+}
+
+.btn-down {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.btn-up {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .quantity {
-  border: none;
-  margin: 0;
+
+  height: 30px;
+  width: 20px;
+  background-color: #f2f4f6;
 }
 
 .information-cart-product p {
@@ -93,18 +107,18 @@ body {
   background-color: rgb(243, 244, 246);
 }
 
-.delete-cart-product {
-  font-size: 15px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: none;
-  background-color: red;
-  color: rgb(0, 0, 0);
-}
+
+
 
 .delete-cart {
   display: flex;
-  align-items: flex-end;
+  align-items: end;
+  border-top: 2px solid #d8dee2  ;
+  line-height: 30px;
+}
+ 
+.status {
+  line-height: 30px;
 }
 
 .Recharge {
@@ -132,3 +146,63 @@ body {
   margin-left: 5px;
   font-size: 15px;
 }
+
+.momopay {
+  transform: scale(0.8);
+  transition: 0.5s;
+  z-index: 20;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(22, 21, 21, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-momopay {
+  max-width: 1000px;
+    background-color: white;
+    padding: 20px 30px;
+
+}
+
+
+.img-momopay img {
+  width: 400px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 35px;
+}
+.show {
+  opacity: 100;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .img-momopay img {
+    width: 100px;
+  }
+}
+@media (max-width:900px) {
+  .img-momopay img {
+    width: 150px;
+  }
+}
+@media (max-width:1200px) {
+  .img-momopay img {
+    width: 300px;
+  }
+}
+

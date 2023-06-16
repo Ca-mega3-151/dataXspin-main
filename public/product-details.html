@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>responsive</title>
+    <title>Sản phẩm</title>
     <link rel="stylesheet" href="css/product-details.css" />
     <link rel="stylesheet" href="css/golbal.css">
     <link
@@ -27,7 +27,7 @@
       <nav class="navbar  header-top">
         <div class="container">
           <div class="container-fluid flex justify-content-between  p-0">
-            <button class="navbar-toggler d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,10 +40,10 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Trang chủ </a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Giỏ hàng</a>
+                    <a class="nav-link" href="cart.html">Giỏ hàng</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -53,7 +53,6 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#product-entertainment">Giải trí</a></li>
                       <li><a class="dropdown-item" href="#product-game">Game</a></li>
-  
                       <li><a class="dropdown-item" href="#product-study">Học tập</a></li>
                     </ul>
                   </li>
@@ -70,7 +69,7 @@
                 </form>
               </div>
             </div>
-            <div class="logo d-none d-sm-block">
+            <div class="logo d-none d-lg-block">
               <a class="navbar-brand flex" href="index.html">
                 <img src="https://cdn.divineshop.vn/static/b1402e84a947ed36cebe9799e47f61c2.svg" alt="" width="50px">
                 <h4 class="p-2 tiltle-logo">SpinX Devine</h4>
@@ -81,16 +80,18 @@
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" style="color: white; border:1px solid white"
-                  type="submit">Search</button>
+                  type="submit">
+                <a class="text-decoration-none " style="color: white;" href="search.html">Search</a>  
+                </button>
               </form>
             </div>
   
-            <div class="sign-xspin flex mt-3 p-1" >
+            <div class="sign-xspin d-none d-xl-flex flex mt-3 p-1" >
               <i style="color: white;" class='bx bx-user-circle'></i>
               <p>Đăng nhập </p>
             </div>
   
-            <div class="cart d-none d-md-block mt-1 p-1">
+            <div class="cart  mt-1 p-1">
               <a href="cart.html" class="flex">
                 <i class='bx bx-cart mt-1'></i>
                 <p class="d-none d-sm-block">Giỏ hàng</p>
@@ -255,8 +256,9 @@
        
     </section>
 
-    <section class="similar-products">
+    <section class="similar-products container ">
       <h2 style="text-align: center;" class="title-similar">Các sản phẩm tương tự</h2>
+      <div class="flex g-2">
       <div class="swiper mt-4 ">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -299,9 +301,10 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+    </div>
     </section>
 
-    <footer>
+    <footer class="mt-3">
       <div class="container">
       <div class="pay">
         <a href=""><img src="./img/icon/momo.svg" width=30 alt=""></a>

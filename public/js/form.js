@@ -1,6 +1,13 @@
 const sign = document.querySelector('.sign-xspin')
 const formSign = document.querySelector('.sign-login')
 const x = document.querySelector('.close')
+const xmomo = document.querySelector('.xmomo')
+const momolink = document.querySelector(`.momopaylink`);
+const momo = document.querySelector(`.momopay`);
+const vnpay = document.querySelector(`.Recharge`);
+
+
+
 
 sign.addEventListener('click', function (e) {
     e.preventDefault;
@@ -12,8 +19,30 @@ sign.addEventListener('click', function (e) {
 x.addEventListener('click', function (e) {
     e.preventDefault
     formSign.classList.add('hide')
-    document.body.classList.remove('bg-sign');
+
 })
+
+
+
+momolink.addEventListener('click', function (e) {
+    e.preventDefault();
+    momo.classList.add('show');
+    momo.classList.remove('hide');
+    
+})
+vnpay.addEventListener('click', function (e) {
+    e.preventDefault();
+    momo.classList.add('show');
+    momo.classList.remove('hide');
+    
+})
+console.log(xmomo)
+
+xmomo.addEventListener('click', function (e) {
+    e.preventDefault();
+    momo.classList.add('hide');
+})
+
 
 //đăng nhập
 

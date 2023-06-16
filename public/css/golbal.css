@@ -42,6 +42,10 @@
     color: white;
     pointer-events: none;
   }
+
+  .list-product ul {
+    padding-left: 0px;
+  }
   
   .sign-xspin-user a {
     font-size: 17px;

@@ -82,8 +82,10 @@ html,
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 100px;
-  
+}
 
+.products .item a {
+  color: #000;
 }
 .products {
   padding: 50px;

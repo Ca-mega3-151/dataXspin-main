@@ -5,6 +5,10 @@
     gap: 20px;
 }
 
+.item a {
+    color: #000;
+}
+
 .filter-products select{
     width: 100%;
     height: 40px;
@@ -36,27 +40,20 @@
 
 .filter-product  {
     background-color: #2579f2;
-    padding: 5px 15px;
-    height: 40px;
+    max-height: 40px;
     border-radius: 5px;
     color: white;
-    line-height: 30px;
-    gap: 5px;
+    pointer-events: none;
 
 }
 
-.filter-product svg {
-    line-height: 30px;
-    height: 40px;
-
+.filter-button  {
+    pointer-events: none;
 }
 
 
-.filter-product p {
-    font-size: 17px;
-    line-height: 30px;
-    height: 40px;
-}
+
+
 
 .No-products-match {
     display: flex;

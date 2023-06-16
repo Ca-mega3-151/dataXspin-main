@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>responsive</title>
+    <title>Trang chủ</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/golbal.css">
     <link rel="stylesheet" href="css/sign.css">
@@ -24,7 +24,7 @@
       <nav class="navbar  header-top">
         <div class="container">
           <div class="container-fluid flex justify-content-between  p-0">
-            <button class="navbar-toggler d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,10 +37,10 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Trang chủ </a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Giỏ hàng</a>
+                    <a class="nav-link" href="cart.html">Giỏ hàng</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -50,7 +50,6 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#product-entertainment">Giải trí</a></li>
                       <li><a class="dropdown-item" href="#product-game">Game</a></li>
-  
                       <li><a class="dropdown-item" href="#product-study">Học tập</a></li>
                     </ul>
                   </li>
@@ -67,7 +66,7 @@
                 </form>
               </div>
             </div>
-            <div class="logo d-none d-sm-block">
+            <div class="logo d-none d-lg-block">
               <a class="navbar-brand flex" href="index.html">
                 <img src="https://cdn.divineshop.vn/static/b1402e84a947ed36cebe9799e47f61c2.svg" alt="" width="50px">
                 <h4 class="p-2 tiltle-logo">SpinX Devine</h4>
@@ -78,16 +77,18 @@
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" style="color: white; border:1px solid white"
-                  type="submit">Search</button>
+                  type="submit">
+                <a class="text-decoration-none " style="color: white;" href="search.html">Search</a>  
+                </button>
               </form>
             </div>
   
-            <div class="sign-xspin flex mt-3 p-1" >
+            <div class="sign-xspin d-none d-xl-flex flex mt-3 p-1" >
               <i style="color: white;" class='bx bx-user-circle'></i>
               <p>Đăng nhập </p>
             </div>
   
-            <div class="cart d-none d-md-block mt-1 p-1">
+            <div class="cart  mt-1 p-1">
               <a href="cart.html" class="flex">
                 <i class='bx bx-cart mt-1'></i>
                 <p class="d-none d-sm-block">Giỏ hàng</p>
@@ -268,12 +269,14 @@
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
+              <a class="text-decoration-none" href="product-details.html">
               <img
                 src="./img/product-giaitri/Divine-Shop-Goi-Gia-Han-Spotify-1-Nam-40567.jpg"
                 alt=""
               />
               <p>Spotify</p>
               <p>1000.000đ</p>
+              </a>
             </div>
           </div>
 
@@ -292,6 +295,7 @@
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
+              <a class="text-decoration-none" href="product-details-2.html"> 
               <img
                 src="./img/product-hoctap/Divine-Shop-Grammarly-Premium-1-Nam-35103.jpg"
                 alt=""
@@ -299,38 +303,45 @@
               <p>Grammarly Premium </p>
               <p>490.000đ</p>
             </div>
+            </a>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
+              <a class="text-decoration-none" href="product-details-2.html">
               <img
                 src="./img/product-hoctap/Divine-Shop-Busuu-Premium-Plus-1-Thang-62667.jpg"
                 alt=""
               />
               <p>Busuu Premium</p>
               <p>15.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
+              <a class="text-decoration-none" href="product-details-2.html">
               <img
                 src="./img/product-game/header (5).jpg"
                 alt=""
               />
               <p>Fly Simulator</p>
               <p>1000.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
+              <a class="text-decoration-none" href="product-details-2.html">
               <img
                 src="./img/product-game/header (2).jpg"
                 alt=""
               />
               <p>Facify</p>
               <p>70.000đ</p>
+            </a>
             </div>
           </div>
         </div>
@@ -352,89 +363,113 @@
         >
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
-                src="./img/product-giaitri/AzireVPN1-53316-20218.jpg"
-                alt=""
-              />
-              <p>AzireVPN1</p>
-              <p>25.000đ</p>
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
+                  src="./img/product-giaitri/AzireVPN1-53316-20218.jpg"
+                  alt=""
+                />
+                <p>AzireVPN1</p>
+                <p>25.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-giaitri/Calm Premium gia hạn-77052.jpg"
                 alt=""
-              />
-              <p>Calm Premium</p>
-              <p>90.000đ</p>
+                />
+                <p>Calm Premium</p>
+                <p>90.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-giaitri/Discord Nitro 1 thang-38313.jpg"
                 alt=""
-              />
-              <p>Discord Nitro</p>
-              <p>165.000đ</p>
+                />
+                <p>Discord Nitro</p>
+                <p>165.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-giaitri/Divine-Shop-Goi-Gia-Han-Spotify-1-Nam-40567.jpg"
                 alt=""
-              />
-              <p>Spotify</p>
-              <p>300.000đ</p>
+                />
+                <p>Spotify</p>
+                <p>300.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-giaitri/Divine-Shop-Goi-Nang-Cap-Office-365-1-Nam-84521.jpg"
                 alt=""
-              />
-              <p>Office Office</p>
-              <p>249.000đ</p>
+                />
+                <p>Office Office</p>
+                <p>249.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-giaitri/Divine-Shop-NETFLIX-1-thang-23298.jpg"
                 alt=""
-              />
-              <p>NETFLIX</p>
-              <p>89.000đ</p>
+                />
+                <p>NETFLIX</p>
+                <p>89.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-giaitri/Tidal HiFi1406.png"
                 alt=""
-              />
-              <p>Tidal HiFi1406</p>
-              <p>19.000đ</p>
+                />
+                <p>Tidal HiFi1406</p>
+                <p>19.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-giaitri/YOUTUBE NO ADS 6 THANG.png"
                 alt=""
-              />
-              <p>YOUTUBE NO ADS</p>
-              <p>75.000đ</p>
+                />
+                <p>YOUTUBE NO ADS</p>
+                <p>75.000đ</p>
+              </a>
             </div>
           </div>
         </div>
@@ -456,89 +491,113 @@
         >
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="https://cdn.cloudflare.steamstatic.com/steam/apps/1313860/header.jpg?t=1610974344"
                 alt=""
-              />
-              <p>EA Sports Fifa 2023</p>
-              <p>1.000.000đ</p>
+                />
+                <p>EA Sports Fifa 2023</p>
+                <p>1.000.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-game/Divine-Shop-Elden-Ring-82335.jpg"
                 alt=""
-              />
-              <p>Elden Ring</p>
-              <p>790.000đ</p>
+                />
+                <p>Elden Ring</p>
+                <p>790.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-game/Divine-Shop-GTA-V19-92008.jpg"
                 alt=""
-              />
-              <p>GTA V</p>
-              <p>250.000đ</p>
+                />
+                <p>GTA V</p>
+                <p>250.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-game/header (1).jpg"
                 alt=""
-              />
-              <p>GOD OF WAR</p>
-              <p>799.000đ</p>
+                />
+                <p>GOD OF WAR</p>
+                <p>799.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-game/header (2).jpg"
                 alt=""
-              />
-              <p>Pacify</p>
-              <p>70.000đ</p>
+                />
+                <p>Pacify</p>
+                <p>70.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-game/header (3).jpg"
                 alt=""
-              />
-              <p>Scrap Machanic</p>
-              <p>188.000đ</p>
+                />
+                <p>Scrap Machanic</p>
+                <p>188.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="img/product-game/header (4).jpg"
                 alt=""
-              />
-              <p>Hero Siege</p>
-              <p>27.000đ</p>
+                />
+                <p>Hero Siege</p>
+                <p>27.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="img/product-game/header (5).jpg"
                 alt=""
-              />
-              <p>Fly Simulator</p>
-              <p>30.000đ</p>
+                />
+                <p>Fly Simulator</p>
+                <p>30.000đ</p>
+              </a>
             </div>
           </div>
         </div>
@@ -560,89 +619,113 @@
         >
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Divine-Shop-Blinkist-3-Thang-66119.jpg"
                 alt=""
-              />
-              <p>Blinkist</p>
-              <p>220.000đ</p>
+                />
+                <p>Blinkist</p>
+                <p>220.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Divine-Shop-Busuu-Premium-Plus-1-Thang-62667.jpg"
                 alt=""
-              />
-              <p>Busuu Premium</p>
-              <p>15.000đ</p>
+                />
+                <p>Busuu Premium</p>
+                <p>15.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Divine-Shop-Coursera-14882.jpg"
                 alt=""
-              />
-              <p>Coursera</p>
-              <p>150.000đ</p>
+                />
+                <p>Coursera</p>
+                <p>150.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Divine-Shop-Duolingo-1-Nam-38503.jpg"
                 alt=""
-              />
-              <p>Duolingo</p>
-              <p>190.000đ</p>
+                />
+                <p>Duolingo</p>
+                <p>190.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Divine-Shop-Grammarly-Premium-1-Nam-35103.jpg"
                 alt=""
-              />
-              <p>Grammarly</p>
-              <p>490.000đ</p>
+                />
+                <p>Grammarly</p>
+                <p>490.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Divine-Shop-Lumosity-1-Nam-25729.jpg"
                 alt=""
-              />
-              <p>Lumosity</p>
-              <p>399.000đ</p>
+                />
+                <p>Lumosity</p>
+                <p>399.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Divine-Shop-Memrise-1-Nam-98141.jpg"
                 alt=""
-              />
-              <p>Memrise</p>
-              <p>300.000đ</p>
+                />
+                <p>Memrise</p>
+                <p>300.000đ</p>
+              </a>
             </div>
           </div>
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <img
+              <a class="text-decoration-none" href="product-details-2.html">
+
+                <img
                 src="./img/product-hoctap/Lynda (LinkedIn Learning).png"
                 alt=""
-              />
-              <p>Lynda</p>
-              <p>290.000đ</p>
+                />
+                <p>Lynda</p>
+                <p>290.000đ</p>
+              </a>
             </div>
           </div>
         </div>
