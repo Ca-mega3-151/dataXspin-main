@@ -22,16 +22,14 @@ function updateCartInfo() {
   cartItems.forEach((cartItem) => {
     const price = +cartItem.querySelector("#product-price").textContent;
     const quantity = +cartItem.querySelector(".quantity").textContent;
-    const totalPriceProduct = document.querySelector('.total-product');
-    // const downButton = document.querySelector(".btn-down");
-   
-
+    const totalPriceProduct = cartItem.querySelector(".total-product");
+  
     totalPriceProduct.textContent = price * quantity;
-    console.log(totalPriceProduct.textContent);
-    totalQuantity += quantity; 
+  
+    totalQuantity += quantity;
     totalPrice += price * quantity;
-
   });
+  
   totalPriceElement.textContent = totalPrice;
   totalQuantityElement.textContent = totalQuantity;
 }
@@ -115,7 +113,7 @@ renderCart();
 
 //giảm 
 const downButtons = document.querySelectorAll("button.btn-down");
-console.log(downButtons);
+
 downButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const quantityElement = button.nextElementSibling;

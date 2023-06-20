@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -47,6 +48,7 @@
                     Sản Phẩm
                   </a>
                   <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="search.html">Tất cả sản phẩm</a></li>
                     <li><a class="dropdown-item" href="#product-entertainment">Giải trí</a></li>
                     <li><a class="dropdown-item" href="#product-game">Game</a></li>
                     <li><a class="dropdown-item" href="#product-study">Học tập</a></li>
@@ -61,7 +63,9 @@
               </ul>
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit">
+                  <a  class="text-decoration-none">Search</a>
+                </button>
               </form>
             </div>
           </div>
@@ -72,14 +76,15 @@
             </a>
           </div>
 
-          <div class="search d-none d-md-block">
+          <div class="search ">
             <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" style="color: white; border:1px solid white" type="submit">
-                <a class="text-decoration-none " style="color: white;" href="search.html">Search</a>
+              <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" id="searchButton" type="submit">
+                <a href="search.html" class="text-decoration-none text-white">Search</a>
               </button>
             </form>
           </div>
+          
 
           <div class="sign-xspin d-none d-xl-flex flex mt-3 p-1">
             <i style="color: white;" class='bx bx-user-circle'></i>
@@ -89,7 +94,7 @@
           <div class="cart  mt-1 p-1">
             <a href="cart.html" class="flex">
               <i class='bx bx-cart mt-1'></i>
-              <p class="d-none d-sm-block">Giỏ hàng</p>
+              <p class="d-none d-lg-block">Giỏ hàng</p>
             </a>
           </div>
 
@@ -111,6 +116,7 @@
             </a>
             <li class="nav-item list-style-none dropdown">
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="search.html">Tất cả sản phẩm</a></li>
                 <li><a class="dropdown-item" href="#product-hot">Sản phẩm bán chạy nhất</a></li>
                 <li><a class="dropdown-item" href="#product-entertainment">Giải trí</a></li>
                 <li><a class="dropdown-item" href="#product-game">Game</a></li>
@@ -205,326 +211,347 @@
       </div>
 
 
-      <div class="flex  filter-products mb-5">
+
+      <div class="flex filter-products mb-5">
         <select name="productportfolio" id="portfolio" class="portfolio">
           <option value="">Tất cả</option>
           <option value="hot">Sản phẩm hot</option>
           <option value="entertainment">Giải trí</option>
           <option value="game">Game</option>
           <option value="study">Học tập</option>
-          <label class="category-ds" for="">Danh Mục</label>
         </select>
+    
         <select name="category" id="category" class="category">
           <option value="">Tất cả</option>
           <option value="phim">Phim</option>
           <option value="music">Nhạc</option>
           <option value="discord">Kết nối</option>
-          <option value="game">Game </option>
+          <option value="game">Game</option>
           <option value="study">Khóa học</option>
           <option value="software">Phầm mềm</option>
-          <label for="" class="category-ds">Thể loại</label>
         </select>
-
-        <div class="">
+    
+        <div>
           <div class="filter-price flex">
-
             <input class="price-from" type="number" min="0" step="10000" placeholder="Mức giá từ">
-            <span class=" ms-2 me-2">-</span>
+            <span class="ms-2 me-2">-</span>
             <input class="price-to" type="number" min="0" step="10000" placeholder="Mức giá đến">
           </div>
         </div>
-
+    
         <div class="filter-product flex">
           <button class="btn btn-primary" id="filter-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-funnel "
-            viewBox="0 0 16 16">
-            <path
-              d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
-          </svg>
+              viewBox="0 0 16 16">
+              <path
+                d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
+            </svg>
             Lọc
           </button>
         </div>
       </div>
-
-
+    
       <div class="No-products-match hide">
         <div>
           <h4 class="text-center mb-5">Không có sản phẩm phù hợp với tìm kiếm</h4>
-          <img loading="lazy" src="https://cdn.divineshop.vn/static/b1d68ae70c17522557b7ac822a0fe731.svg" class="Ca"
+          <img loading="lazy"
+            src="https://cdn.divineshop.vn/static/b1d68ae70c17522557b7ac822a0fe731.svg"
             alt="Không có sản phẩm phù hợp với tìm kiếm">
         </div>
       </div>
 
 
 
+
       <div class="row gx-sm-6 gy-sm-6 gx-md-6 gy-md-6 gx-xl-4 gy-xl-4 list-product-game list-product"
         id="list-product-search">
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="entertainment" data-category="discord"
+        data-price="25000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/AzireVPN1-53316-20218.jpg" alt="" />
-              <p>AzireVPN1</p>
-              <p>25.000đ</p>
+              <p class="name-product">AzireVPN1</p>
+              <p class="price">25.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="90000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/Calm Premium gia hạn-77052.jpg" alt="" />
-              <p>Calm Premium</p>
+              <p class="name-product">Calm Premium</p>
               <p class="price">90.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="entertainment" data-category="discord"
+        data-price="165000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/Discord Nitro 1 thang-38313.jpg" alt="" />
-              <p>Discord Nitro</p>
+              <p class="name-product">Discord Nitro</p>
               <p class="price">165.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="entertainment" data-category="music"
+        data-price="300000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/Divine-Shop-Goi-Gia-Han-Spotify-1-Nam-40567.jpg" alt="" />
-              <p>Spotify</p>
+              <p class="name-product">Spotify</p>
               <p class="price">300.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="software"
+        data-price="249000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/Divine-Shop-Goi-Nang-Cap-Office-365-1-Nam-84521.jpg" alt="" />
-              <p>Office Office</p>
+              <p class="name-product">Office Office</p>
               <p class="price">249.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="entertainment" data-category="phim"
+        data-price="89000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/Divine-Shop-NETFLIX-1-thang-23298.jpg" alt="" />
-              <p>NETFLIX</p>
+              <p class="name-product">NETFLIX</p>
               <p class="price">89.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="entertainment" data-category="music"
+        data-price="19000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/Tidal HiFi1406.png" alt="" />
-              <p>Tidal HiFi1406</p>
+              <p class="name-product">Tidal HiFi1406</p>
               <p class="price">19.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="entertainment" data-category="phim"
+        data-price="75000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-giaitri/YOUTUBE NO ADS 6 THANG.png" alt="" />
-              <p>YOUTUBE NO ADS</p>
+              <p class="name-product">YOUTUBE NO ADS</p>
               <p class="price">75.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="1000000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1313860/header.jpg?t=1610974344" alt="" />
-              <p>EA Sports Fifa 2023</p>
+              <p class="name-product">EA Sports Fifa 2023</p>
               <p class="price">1.000.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="790000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-game/Divine-Shop-Elden-Ring-82335.jpg" alt="" />
-              <p>Elden Ring</p>
+              <p class="name-product">Elden Ring</p>
               <p class="price">790.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="250000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-game/Divine-Shop-GTA-V19-92008.jpg" alt="" />
-              <p>GTA V</p>
+              <p class="name-product">GTA V</p>
               <p class="price">250.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="799000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-game/header (1).jpg" alt="" />
-              <p>GOD OF WAR</p>
+              <p class="name-product">GOD OF WAR</p>
               <p class="price">799.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="70000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-game/header (2).jpg" alt="" />
-              <p>Pacify</p>
+              <p class="name-product">Pacify</p>
               <p class="price">70.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="188000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-game/header (3).jpg" alt="" />
-              <p>Scrap Machanic</p>
+              <p class="name-product"> Scrap Machanic</p>
               <p class="price">188.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="27000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="img/product-game/header (4).jpg" alt="" />
-              <p>Hero Siege</p>
+              <p class="name-product">Hero Siege</p>
               <p class="price">27.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="30000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="img/product-game/header (5).jpg" alt="" />
-              <p>Fly Simulator</p>
+              <p class="name-product">Fly Simulator</p>
               <p class="price">30.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="game" data-category="game"
+        data-price="220000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Divine-Shop-Blinkist-3-Thang-66119.jpg" alt="" />
-              <p>Blinkist</p>
+              <p class="name-product">Blinkist</p>
               <p class="price">220.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="15000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Divine-Shop-Busuu-Premium-Plus-1-Thang-62667.jpg" alt="" />
-              <p>Busuu Premium</p>
+              <p class="name-product">Busuu Premium</p>
               <p class="price">15.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="150000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Divine-Shop-Coursera-14882.jpg" alt="" />
-              <p>Coursera</p>
+              <p class="name-product">Coursera</p>
               <p class="price">150.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="190000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Divine-Shop-Duolingo-1-Nam-38503.jpg" alt="" />
-              <p>Duolingo</p>
+              <p class="name-product">Duolingo</p>
               <p class="price">190.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="490000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Divine-Shop-Grammarly-Premium-1-Nam-35103.jpg" alt="" />
-              <p>Grammarly</p>
+              <p class="name-product">Grammarly</p>
               <p class="price">490.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="399000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Divine-Shop-Lumosity-1-Nam-25729.jpg" alt="" />
-              <p>Lumosity</p>
+              <p class="name-product">Lumosity</p>
               <p class="price">399.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="300000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Divine-Shop-Memrise-1-Nam-98141.jpg" alt="" />
-              <p>Memrise</p>
+              <p class="name-product">Memrise</p>
               <p class="price">300.000đ</p>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all">
+        <div class="col-sm-6 col-md-4 col-xl-3 list-product-all" data-portfolio="study" data-category="study"
+        data-price="290000">
           <div class="item">
             <a class="text-decoration-none" href="product-details-2.html">
 
               <img src="./img/product-hoctap/Lynda (LinkedIn Learning).png" alt="" />
-              <p>Lynda</p>
+              <p class="name-product">Lynda</p>
               <p class="price">290.000đ</p>
             </a>
           </div>
         </div>
-
-
-
 
       </div>
 
@@ -594,6 +621,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/golbal.js"></script>
   <script src="js/sreach.js"></script>
   <script src="js/form.js"></script>
   <script src="js/js.js"></script>

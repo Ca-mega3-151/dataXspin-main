@@ -43,6 +43,10 @@
     pointer-events: none;
   }
 
+  #searchButton {
+    border: 1px solid white;
+  }
+
   .list-product ul {
     padding-left: 0px;
   }

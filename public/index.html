@@ -48,6 +48,7 @@
                       Sản Phẩm
                     </a>
                     <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="search.html">Tất cả sản phẩm</a></li>
                       <li><a class="dropdown-item" href="#product-entertainment">Giải trí</a></li>
                       <li><a class="dropdown-item" href="#product-game">Game</a></li>
                       <li><a class="dropdown-item" href="#product-study">Học tập</a></li>
@@ -62,7 +63,9 @@
                 </ul>
                 <form class="d-flex mt-3" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn btn-outline-success" type="submit">
+                    <a href="search.html" class="text-decoration-none">Search</a>
+                  </button>
                 </form>
               </div>
             </div>
@@ -75,15 +78,15 @@
   
             <div class="search d-none d-md-block">
               <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" style="color: white; border:1px solid white"
-                  type="submit">
-                <a class="text-decoration-none " style="color: white;" href="search.html">Search</a>  
+                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" id="searchButton" type="submit">
+                  <a href="search.html" class="text-decoration-none text-white">Search</a>
                 </button>
               </form>
             </div>
+            
   
-            <div class="sign-xspin d-none d-xl-flex flex mt-3 p-1" >
+            <div class="sign-xspin d-none d-xl-flex flex mt-3 p-1">
               <i style="color: white;" class='bx bx-user-circle'></i>
               <p>Đăng nhập </p>
             </div>
@@ -99,8 +102,8 @@
           </div>
         </div>
       </nav>
-
-   
+  
+  
   
       <nav class="navbar nav_main d-none d-xl-block">
         <div class="container">
@@ -113,6 +116,7 @@
               </a>
               <li class="nav-item list-style-none dropdown">
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="search.html">Tất cả sản phẩm</a></li>
                   <li><a class="dropdown-item" href="#product-hot">Sản phẩm bán chạy nhất</a></li>
                   <li><a class="dropdown-item" href="#product-entertainment">Giải trí</a></li>
                   <li><a class="dropdown-item" href="#product-game">Game</a></li>
@@ -243,7 +247,7 @@
         >
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <a class="text-decoration-none" href="product-details.html">
+              <a class="text-decoration-none" href="product-details-2.html">
                 <img
                 src="./img/product-game/header.jpg"
                 alt=""
@@ -269,7 +273,7 @@
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <a class="text-decoration-none" href="product-details.html">
+              <a class="text-decoration-none" href="product-details-2.html">
               <img
                 src="./img/product-giaitri/Divine-Shop-Goi-Gia-Han-Spotify-1-Nam-40567.jpg"
                 alt=""
@@ -282,7 +286,7 @@
 
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="item">
-              <a class="text-decoration-none" href="product-details-3.html">
+              <a class="text-decoration-none" href="product-details-2.html">
               <img
                 src="./img/product-giaitri/Discord Nitro 1 thang-38313.jpg"
                 alt=""
@@ -794,6 +798,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></script>
    <script src="js/data.js"></script>
+   <script src="js/sreach.js"></script>
     <script src="js/form.js"></script>
     <script src="js/js.js"></script>
   </body>

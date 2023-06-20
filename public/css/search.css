@@ -9,7 +9,7 @@
     color: #000;
 }
 
-.filter-products select{
+.filter-products select {
     width: 100%;
     height: 40px;
     border-radius: 5px;
@@ -19,10 +19,10 @@
 
 }
 
-.filter-products select .category-ds{
+.filter-products select .category-ds {
     position: absolute;
     top: 1px;
-    pointer-events: none;
+
 }
 
 .filter-price {
@@ -38,18 +38,15 @@
     padding: 5px 10px
 }
 
-.filter-product  {
+.filter-product {
     background-color: #2579f2;
     max-height: 40px;
     border-radius: 5px;
     color: white;
-    pointer-events: none;
+
 
 }
 
-.filter-button  {
-    pointer-events: none;
-}
 
 
 
@@ -59,11 +56,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
 .No-products-match img {
- max-width: 100%;
+    max-width: 100%;
 }
-

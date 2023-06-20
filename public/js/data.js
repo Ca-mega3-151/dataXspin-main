@@ -17,16 +17,6 @@ const products = {
         "./img/product-game/Divine-Shop-Elden-Ring-82335.jpg",
       price: 2500000
     },
-    3: {
-      id: 3,
-      title: "GTA V ONLINE VSOS21 Champions Edition ",
-      status:"Còn hàng",
-      category: "Game",
-      thumbnail:
-        "./img/product-game/Divine-Shop-GTA-V19-92008.jpg",
-      price: 3000000
-    },
-
 
   };
   
