@@ -16,7 +16,6 @@
     border: 1px solid rgb(181, 188, 186);
     padding: 0px 15px;
     flex-basis: 100.00000000%;
-
 }
 
 .filter-products select .category-ds {
@@ -43,22 +42,11 @@
     max-height: 40px;
     border-radius: 5px;
     color: white;
-
-
 }
-
-
-
-
-
 
 .No-products-match {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  text-align: center;
 }
-
 
 .No-products-match img {
     max-width: 100%;
