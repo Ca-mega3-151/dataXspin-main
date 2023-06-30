@@ -188,3 +188,46 @@ div.pay,.contact a img {
 .logo-footer {
   margin-right: 10px;
 }
+
+.svip {
+  max-width: 100%;
+ height: 550px;
+  padding: 100px 0px 0px 0px;
+}
+.svip .img-svip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-svip img {
+  max-width: 100%;
+}
+
+.svip .btn-svip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.btn-svip button {
+  padding: 10px 15px;
+  border: 1px solid #2579f2;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.btn-svip button:hover {
+ background-color: #2579f2;
+ border: 1px solid #0ff279;
+ color: white;
+}
+
+@media (max-width:700px) {
+  .svip {
+    max-width: 100%;
+    height: 450px;
+    padding: 100px 0px 0px 0px;
+  }
+}
