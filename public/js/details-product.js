@@ -124,5 +124,5 @@ btnAddToCarts.forEach((btn) => {
   });
 });
 
-// {cart: {items: [ {id: ?, quantity: ?} ]}}
+
 

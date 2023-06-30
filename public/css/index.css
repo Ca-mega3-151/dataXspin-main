@@ -110,31 +110,31 @@ html,
 }
 
 @media (max-width: 500px) {
-  .game-title {
-    width: 100px;
+
+  .content-hot{
+    padding: 20px 0px 20px 0px;
+  }
+ 
+  .hot-title h3 {
+    padding: 5px 12px;
   }
   .game-title h2 {
-    font-size: 17;
+    font-size: 17px;
   }
   .game-title p {
     font-size: 11px;
   }
   .discover {
-    font-size: 10px;
-    padding: 0px 5px;
-    background-color: rgb(68, 61, 203);
-    color: white;
-    line-height: 20px;
-    height: 20px;
-    border-radius: 10px;
+    display: none;
   }
 
 }
 
 @media (max-width: 700px) {
   .game-title h3 {
-    font-size: 13px;
+    font-size: 18px;
     height: 40px;
+
     
   }
   .discover {
@@ -154,14 +154,6 @@ html,
 
 @media (max-width: 900px) {
 
-  .discover {
-    font-size: 11px;
-    padding: 0px 10px;
-    background-color: rgb(68, 61, 203);
-    color: white;
-    line-height: 30px;
-    height: 30px;
-    border-radius: 10px;
-  }
+
 }
 

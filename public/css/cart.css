@@ -166,7 +166,9 @@ body {
 .img-momopay {
   max-width: 1000px;
     background-color: white;
-    padding: 20px 30px;
+    padding: 30px 50px;
+    position: relative;
+
 
 }
 
@@ -177,8 +179,8 @@ body {
 
 .close {
   position: absolute;
-  top: 5px;
-  right: 20px;
+  top: 0px;
+  right: 7px;
   font-size: 35px;
 }
 .show {

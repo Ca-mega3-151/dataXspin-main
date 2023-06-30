@@ -1,73 +1,23 @@
 
-
-// const products = [];
-// const url = new URL(location.href);
-
-
-// const portfolio = url.searchParams.get("portfolio");
-// const category = url.searchParams.get("category");
-
-// // Lọc theo brand
-// const filteredByportfolio = portfolio ? products.filter(() => true) : products;
-
-// // Lọc theo category
-// const filteredByCategory = category
-//   ? filteredByportfolio.filter(() => true)
-//   : filteredByportfolio;
-
-
-
-// function updateParams(key, value) {
-//   const url = new URL(location.href);
-
-//   if (!value) {
-//     url.searchParams.delete(key);
-//   } else {
-//     url.searchParams.set(key, value);
-//   }
-
-//   window.location.replace(url);
-// }
-
-// $(function () {
-
-//   $("#category").change(function (e) {
-//     const val = $(this).val();
-
-//     updateParams("category", val);
-//   });
-
-//   $("#portfolio").change(function (e) {
-//     const val = $(this).val();
-
-//     updateParams("portfolio", val);
-//   });
-
-// });
-
 //TÌm kiếm
-
 $(document).ready(function () {
- 
   $("#searchButton").click(function (event) {
-    console.log(`ca`)
-    event.preventDefault(); // Prevent the default form behavior
+    event.preventDefault(); // Ngăn chặn hành vi mặc định của form
 
-    var searchTerm = $("#searchInput").val().toLowerCase(); // Get the search term and convert it to lowercase
+    var searchTerm = $("#searchInput").val().toLowerCase(); // Lấy từ khóa tìm kiếm và chuyển đổi thành chữ thường
 
     $(".item").each(function () {
-      var productName = $(this).find(".name-product").text().toLowerCase(); // Get the product name and convert it to lowercase
+      var productName = $(this).find(".name-product").text().toLowerCase(); // Lấy tên sản phẩm và chuyển đổi thành chữ thường
 
       if (productName.includes(searchTerm)) {
-        $(this).show(); // Show the product
+        $(this).parent().show(); // Hiển thị sản phẩm và phần tử cha
       } else {
-        $(this).hide(); // Hide the product
+        $(this).parent().hide(); // Ẩn sản phẩm và phần tử cha
       }
-      
-
     });
   });
 });
+
 
 
 // lọc
