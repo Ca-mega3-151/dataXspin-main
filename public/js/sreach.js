@@ -21,29 +21,68 @@ $(document).ready(function () {
 
 
 // lọc
+// $(document).ready(function () {
+//   $('#filter-button').click(function () {
+//     var selectedPortfolio = $('#portfolio').val();
+//     var selectedCategory = $('#category').val();
+//     var priceFrom = $('.price-from').val();
+//     var priceTo = $('.price-to').val();
+
+//     $('.list-product-all').hide();
+
+//     $('.list-product-all').each(function () {
+//       var productPortfolio = $(this).attr('data-portfolio');
+//       var productCategory = $(this).attr('data-category');
+//       var productPrice = parseInt($(this).attr('data-price'));
+
+//       if ((selectedPortfolio === '' || productPortfolio === selectedPortfolio) &&
+//         (selectedCategory === '' || productCategory === selectedCategory) &&
+//         (isNaN(priceFrom) || productPrice >= parseInt(priceFrom)) &&
+//         (isNaN(priceTo) || productPrice <= parseInt(priceTo))) {
+//         $(this).show();
+//       }
+//     });
+
+//     var visibleProducts = $('.list-product-all:visible').length;
+//     if (visibleProducts === 0) {
+//       $('.No-products-match').show();
+//     } else {
+//       $('.No-products-match').hide();
+//     }
+//   });
+// });
+
 $(document).ready(function () {
   $('#filter-button').click(function () {
-    var selectedPortfolio = $('#portfolio').val();
-    var selectedCategory = $('#category').val();
-    var priceFrom = $('.price-from').val();
-    var priceTo = $('.price-to').val();
+    const selectedPortfolio = $('#portfolio').val();
+    const selectedCategory = $('#category').val();
+    const priceFrom = $('.price-from').val();
+    const priceTo = $('.price-to').val();
 
     $('.list-product-all').hide();
 
-    $('.list-product-all').each(function () {
-      var productPortfolio = $(this).attr('data-portfolio');
-      var productCategory = $(this).attr('data-category');
-      var productPrice = parseInt($(this).attr('data-price'));
-
+    const filterFunction = function (productPortfolio, productCategory, productPrice) {
       if ((selectedPortfolio === '' || productPortfolio === selectedPortfolio) &&
         (selectedCategory === '' || productCategory === selectedCategory) &&
-        (isNaN(priceFrom) || productPrice >= parseInt(priceFrom)) &&
-        (isNaN(priceTo) || productPrice <= parseInt(priceTo))) {
+        ((isNaN(priceFrom) || productPrice >= parseInt(priceFrom)) ||
+        (isNaN(priceTo) || productPrice <= parseInt(priceTo)) ||
+        (priceFrom === '' && priceTo === ''))) {
+        return true;
+      }
+      return false;
+    };
+
+    $('.list-product-all').each(function () {
+      const productPortfolio = $(this).attr('data-portfolio');
+      const productCategory = $(this).attr('data-category');
+      const productPrice = parseInt($(this).attr('data-price'));
+
+      if (filterFunction(productPortfolio, productCategory, productPrice)) {
         $(this).show();
       }
     });
 
-    var visibleProducts = $('.list-product-all:visible').length;
+    const visibleProducts = $('.list-product-all:visible').length;
     if (visibleProducts === 0) {
       $('.No-products-match').show();
     } else {
@@ -51,4 +90,5 @@ $(document).ready(function () {
     }
   });
 });
+
 
